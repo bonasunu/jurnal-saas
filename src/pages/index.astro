@@ -3,9 +3,22 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Jurnal Perjalanan Membangun SaaS">
-	<main class="flex-grow">
-		<h1 class="text-3xl font-bold text-red-600">Jurnal SaaS</h1>
-		<div class="font-sans">
+	<main class="flex-grow font-medium">
+		<h1 id="top" class="text-3xl font-bold text-red-600">Jurnal SaaS</h1>
+		<div class="mt-3">
+			<h3 class="text-lg font-extrabold my-2">Selamat datang! Perkenalkan, saya <a href="https://x.com/DevkageOnline" target="_blank" class="underline">Bonski</a>.</h3>
+			<h3>
+				Situs ini merupakan dokumentasi perjalanan saya membangun SaaS dari awal hingga akhir. 
+				Semua hal yang berkaitan dengan teknis dan non-teknis serta suka duka akan saya simpan di sini.
+				Informasi yang ada di sini gratis dan terbuka. Silakan gunakan informasi ini untuk keperluan broski siski sekalian. 
+			</h3>
+			<br>
+			<h3>
+				Bagi yang tertarik diskusi bisa mengikuti <a href="https://x.com/DevkageOnline" target="_blank" class="underline">Thread ini di X.com</a>
+			</h3>
+			<br>
+		</div>
+		<!-- <div class="font-sans">
 			<h1 class="text-3xl font-bold">Bold Urbanist Heading</h1>
 			<p class="font-thin">This is thin (100) Urbanist text.</p>
 			<p class="font-light">This is light (300) Urbanist text.</p>
@@ -14,8 +27,15 @@ import Layout from '../layouts/Layout.astro';
 			<p class="font-semibold">This is semi-bold (600) Urbanist text.</p>
 			<p class="font-extrabold">This is extra-bold (800) Urbanist text.</p>
 			<p class="font-black">This is black (900) Urbanist text.</p>
-		  </div>
+		</div> -->
 	</main>
+	<div class="relative flex py-5 items-center">
+		<div class="flex-grow border-t border-gray-300"></div>
+		<span class="flex-shrink mx-4">
+			<a href="#top" class="text-center text-gray-500 underline" aria-label="Kembali ke atas">kembali ke atas</a>
+		</span>
+		<div class="flex-grow border-t border-gray-300"></div>
+	</div>
 	<footer class="flex flex-col sm:flex-row items-center gap-3">
 		<div class="flex-grow font-medium">{new Date().getFullYear()} - Jurnal SaaS oleh <a href="https://x.com/DevkageOnline" target="_blank" class="underline">Bonski</a></div>
 		<div class="rounded bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-200 p-2 flex gap-2">
