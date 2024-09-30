@@ -3,8 +3,8 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1 class="font-bold text-red-500">Jurnal SaaS</h1>
+	<main class="flex-grow">
+		<h1 class="text-3xl font-bold text-red-600">Jurnal SaaS</h1>
 		<div class="font-sans">
 			<h1 class="text-3xl font-bold">Bold Urbanist Heading</h1>
 			<p class="font-thin">This is thin (100) Urbanist text.</p>
@@ -16,4 +16,11 @@ import Layout from '../layouts/Layout.astro';
 			<p class="font-black">This is black (900) Urbanist text.</p>
 		  </div>
 	</main>
+	<footer class="flex flex-col sm:flex-row items-center gap-3">
+		<div class="flex-grow font-medium">{new Date().getFullYear()} - Jurnal SaaS oleh <a href="https://x.com/DevkageOnline" target="_blank" class="underline">Bonski</a></div>
+		<div class="rounded bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-200 p-2 flex gap-2">
+			<a href="https://saweria.co/bonskinho" target="_blank">Dukung melalui Saweria</a>
+			<img src="capy_happy.svg" class="w-8 h-auto" />
+		</div>
+	</footer>
 </Layout>
